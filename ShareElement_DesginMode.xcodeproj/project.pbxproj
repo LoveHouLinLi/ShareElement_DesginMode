@@ -13,6 +13,9 @@
 		BFA5B6FD1F7B45CE0014C009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA5B6FC1F7B45CE0014C009 /* Assets.xcassets */; };
 		BFA5B7001F7B45CE0014C009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA5B6FE1F7B45CE0014C009 /* LaunchScreen.storyboard */; };
 		BFA5B7031F7B45CE0014C009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5B7021F7B45CE0014C009 /* main.m */; };
+		BFA5B70B1F7B45FE0014C009 /* WebSiteFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5B70A1F7B45FE0014C009 /* WebSiteFactory.m */; };
+		BFA5B70F1F7B47770014C009 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5B70E1F7B47770014C009 /* User.m */; };
+		BFA5B7121F7B48D30014C009 /* DLConcreteWebSite.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5B7111F7B48D30014C009 /* DLConcreteWebSite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		BFA5B6FF1F7B45CE0014C009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFA5B7011F7B45CE0014C009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFA5B7021F7B45CE0014C009 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFA5B7091F7B45FE0014C009 /* WebSiteFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebSiteFactory.h; sourceTree = "<group>"; };
+		BFA5B70A1F7B45FE0014C009 /* WebSiteFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebSiteFactory.m; sourceTree = "<group>"; };
+		BFA5B70C1F7B461E0014C009 /* WebSiteProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebSiteProtocol.h; sourceTree = "<group>"; };
+		BFA5B70D1F7B47770014C009 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		BFA5B70E1F7B47770014C009 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		BFA5B7101F7B48D30014C009 /* DLConcreteWebSite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLConcreteWebSite.h; sourceTree = "<group>"; };
+		BFA5B7111F7B48D30014C009 /* DLConcreteWebSite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLConcreteWebSite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,13 @@
 				BFA5B6F41F7B45CE0014C009 /* AppDelegate.m */,
 				BFA5B6F61F7B45CE0014C009 /* ViewController.h */,
 				BFA5B6F71F7B45CE0014C009 /* ViewController.m */,
+				BFA5B70D1F7B47770014C009 /* User.h */,
+				BFA5B70E1F7B47770014C009 /* User.m */,
+				BFA5B70C1F7B461E0014C009 /* WebSiteProtocol.h */,
+				BFA5B7091F7B45FE0014C009 /* WebSiteFactory.h */,
+				BFA5B70A1F7B45FE0014C009 /* WebSiteFactory.m */,
+				BFA5B7101F7B48D30014C009 /* DLConcreteWebSite.h */,
+				BFA5B7111F7B48D30014C009 /* DLConcreteWebSite.m */,
 				BFA5B6F91F7B45CE0014C009 /* Main.storyboard */,
 				BFA5B6FC1F7B45CE0014C009 /* Assets.xcassets */,
 				BFA5B6FE1F7B45CE0014C009 /* LaunchScreen.storyboard */,
@@ -142,8 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA5B70F1F7B47770014C009 /* User.m in Sources */,
 				BFA5B6F81F7B45CE0014C009 /* ViewController.m in Sources */,
+				BFA5B7121F7B48D30014C009 /* DLConcreteWebSite.m in Sources */,
 				BFA5B7031F7B45CE0014C009 /* main.m in Sources */,
+				BFA5B70B1F7B45FE0014C009 /* WebSiteFactory.m in Sources */,
 				BFA5B6F51F7B45CE0014C009 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
