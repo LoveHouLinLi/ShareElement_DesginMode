@@ -23,7 +23,12 @@ typedef id<WebSiteProtocol> webSiteType;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    [self simpleTest];
+}
+
+
+- (void)simpleTest
+{
     WebSiteFactory *factory = [[WebSiteFactory alloc]init];
     
     webSiteType type1 = [factory getWebSiteCategory:@"首页"];
@@ -35,7 +40,7 @@ typedef id<WebSiteProtocol> webSiteType;
     User *user2 = [[User alloc]init];
     user2.userName = @"德龙";
     [type2 use:user2];
-
+    
     
     webSiteType type3 = [factory getWebSiteCategory:@"Java"];
     User *user3 = [[User alloc]init];
@@ -57,9 +62,8 @@ typedef id<WebSiteProtocol> webSiteType;
     NSLog(@"个数: %ld", (long)count2);  //  3
     
     //  从这个数量 可以看出来 type4  其实  和 type3  是共享的 并没有重复的使用
-    
-
 }
+
 
 
 - (void)didReceiveMemoryWarning {
