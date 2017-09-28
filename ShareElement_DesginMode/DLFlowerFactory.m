@@ -20,7 +20,8 @@
     UIView *flowerView = [flowerPool_ objectForKey:[NSNumber numberWithInt:type]];
     
     // 如果 池中没有
-    if (flowerView == nil) {
+    if (flowerView == nil)
+    {
         UIImage *flowerImage = nil;
         switch (type) {
             case kAnemone:

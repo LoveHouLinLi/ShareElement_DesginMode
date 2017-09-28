@@ -11,6 +11,9 @@
 #import "User.h"
 #import "WebSiteProtocol.h"
 #import "DLConcreteWebSite.h"
+#import "DLFlowerFactory.h"
+#import "ExtrinsicFlowerState.h"   // 定义 结构体的地方
+#import "DLFlyweightView.h"
 
 typedef id<WebSiteProtocol> webSiteType;
 
@@ -23,7 +26,8 @@ typedef id<WebSiteProtocol> webSiteType;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self simpleTest];
+//    [self simpleTest];
+    [self hundredsFlowers];
 }
 
 #pragma mark ----  simple Test
@@ -65,7 +69,40 @@ typedef id<WebSiteProtocol> webSiteType;
 }
 
 #pragma mark ----  实际开发中使用
+// 新增加的 百花图
+- (void)hundredsFlowers
+{
+    DLFlowerFactory *factory = [[DLFlowerFactory alloc]init];
+    NSMutableArray *flowerList = [[NSMutableArray alloc] initWithCapacity:500];
+    
+    DLFlyweightView *flyweightView = [[DLFlyweightView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:flyweightView];
+    
+    for (int i =0 ; i<500; i++)
+    {
+        FlowerType flowerType = arc4random()%kTotalNumberOfFlowerTypes;
+        UIView *flowerView = [factory flowerViewWithType:flowerType];
+        
+        CGRect screenBounds = [[UIScreen mainScreen] bounds];
+        
+        // 随机的位置 随机的view 的10 - 50 之间的大小的 view
+        CGFloat x = (arc4random() % (NSInteger)screenBounds.size.width);
+        CGFloat y = (arc4random() % (NSInteger)screenBounds.size.height);
+        NSInteger minSize = 10;
+        NSInteger maxSize = 50;
+        CGFloat size = (arc4random() % (maxSize - minSize + 1)) + minSize;
 
+        ExtrinsicFlowerState extrinsicState;
+        extrinsicState.flowerView = flowerView;
+        extrinsicState.area = CGRectMake(x, y, size, size);
+        
+        [flowerList addObject:[NSValue value:&extrinsicState withObjCType:@encode(ExtrinsicFlowerState)]];
+    
+    }
+    
+//    [(DLFlyweightView *)self.view setFlowerList:flowerList];
+    [flyweightView setFlowerList:flowerList];
+}
 
 
 

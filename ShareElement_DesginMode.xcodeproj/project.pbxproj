@@ -18,6 +18,7 @@
 		BFA5B7121F7B48D30014C009 /* DLConcreteWebSite.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5B7111F7B48D30014C009 /* DLConcreteWebSite.m */; };
 		BFE942781F7C9CBE00205BA3 /* DLFlowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE942771F7C9CBE00205BA3 /* DLFlowerFactory.m */; };
 		BFE9427B1F7C9CCF00205BA3 /* DLFlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9427A1F7C9CCF00205BA3 /* DLFlowerView.m */; };
+		BFE9427F1F7CA74700205BA3 /* DLFlyweightView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9427E1F7CA74700205BA3 /* DLFlyweightView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,9 @@
 		BFE942771F7C9CBE00205BA3 /* DLFlowerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLFlowerFactory.m; sourceTree = "<group>"; };
 		BFE942791F7C9CCF00205BA3 /* DLFlowerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLFlowerView.h; sourceTree = "<group>"; };
 		BFE9427A1F7C9CCF00205BA3 /* DLFlowerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLFlowerView.m; sourceTree = "<group>"; };
+		BFE9427C1F7CA67000205BA3 /* ExtrinsicFlowerState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtrinsicFlowerState.h; sourceTree = "<group>"; };
+		BFE9427D1F7CA74700205BA3 /* DLFlyweightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLFlyweightView.h; sourceTree = "<group>"; };
+		BFE9427E1F7CA74700205BA3 /* DLFlyweightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLFlyweightView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,9 @@
 				BFE942771F7C9CBE00205BA3 /* DLFlowerFactory.m */,
 				BFE942791F7C9CCF00205BA3 /* DLFlowerView.h */,
 				BFE9427A1F7C9CCF00205BA3 /* DLFlowerView.m */,
+				BFE9427D1F7CA74700205BA3 /* DLFlyweightView.h */,
+				BFE9427E1F7CA74700205BA3 /* DLFlyweightView.m */,
+				BFE9427C1F7CA67000205BA3 /* ExtrinsicFlowerState.h */,
 				BFA5B7131F7BB1FA0014C009 /* PincipleIntroduction */,
 				BFA5B6F91F7B45CE0014C009 /* Main.storyboard */,
 				BFA5B6FC1F7B45CE0014C009 /* Assets.xcassets */,
@@ -178,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA5B70F1F7B47770014C009 /* User.m in Sources */,
+				BFE9427F1F7CA74700205BA3 /* DLFlyweightView.m in Sources */,
 				BFA5B6F81F7B45CE0014C009 /* ViewController.m in Sources */,
 				BFA5B7121F7B48D30014C009 /* DLConcreteWebSite.m in Sources */,
 				BFE9427B1F7C9CCF00205BA3 /* DLFlowerView.m in Sources */,
