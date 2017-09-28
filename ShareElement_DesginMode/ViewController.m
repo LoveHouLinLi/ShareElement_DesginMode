@@ -26,7 +26,7 @@ typedef id<WebSiteProtocol> webSiteType;
     [self simpleTest];
 }
 
-
+#pragma mark ----  simple Test
 - (void)simpleTest
 {
     WebSiteFactory *factory = [[WebSiteFactory alloc]init];
@@ -63,6 +63,11 @@ typedef id<WebSiteProtocol> webSiteType;
     
     //  从这个数量 可以看出来 type4  其实  和 type3  是共享的 并没有重复的使用
 }
+
+#pragma mark ----  实际开发中使用
+
+
+
 
 
 
