@@ -74,12 +74,12 @@ typedef id<WebSiteProtocol> webSiteType;
 - (void)hundredsFlowers
 {
     DLFlowerFactory *factory = [[DLFlowerFactory alloc]init];
-    NSMutableArray *flowerList = [[NSMutableArray alloc] initWithCapacity:1000];
+    NSMutableArray *flowerList = [[NSMutableArray alloc] initWithCapacity:600];
     
     DLFlyweightView *flyweightView = [[DLFlyweightView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:flyweightView];
     
-    for (int i =0 ; i<1000; i++)
+    for (int i =0 ; i<600; i++)
     {
         FlowerType flowerType = arc4random()%kTotalNumberOfFlowerTypes;
         UIView *flowerView = [factory flowerViewWithType:flowerType];
