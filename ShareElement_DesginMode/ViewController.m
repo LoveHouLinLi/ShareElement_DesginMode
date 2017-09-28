@@ -12,8 +12,9 @@
 #import "WebSiteProtocol.h"
 #import "DLConcreteWebSite.h"
 #import "DLFlowerFactory.h"
-#import "ExtrinsicFlowerState.h"   // 定义 结构体的地方
+#import "ExtrinsicFlowerState.h"   // 定义 结构体的地方 用于存储image 和 area
 #import "DLFlyweightView.h"
+#import "DLFlyweightMode.h"
 
 typedef id<WebSiteProtocol> webSiteType;
 
@@ -73,12 +74,12 @@ typedef id<WebSiteProtocol> webSiteType;
 - (void)hundredsFlowers
 {
     DLFlowerFactory *factory = [[DLFlowerFactory alloc]init];
-    NSMutableArray *flowerList = [[NSMutableArray alloc] initWithCapacity:500];
+    NSMutableArray *flowerList = [[NSMutableArray alloc] initWithCapacity:1000];
     
     DLFlyweightView *flyweightView = [[DLFlyweightView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:flyweightView];
     
-    for (int i =0 ; i<500; i++)
+    for (int i =0 ; i<1000; i++)
     {
         FlowerType flowerType = arc4random()%kTotalNumberOfFlowerTypes;
         UIView *flowerView = [factory flowerViewWithType:flowerType];
@@ -92,11 +93,18 @@ typedef id<WebSiteProtocol> webSiteType;
         NSInteger maxSize = 50;
         CGFloat size = (arc4random() % (maxSize - minSize + 1)) + minSize;
 
-        ExtrinsicFlowerState extrinsicState;
-        extrinsicState.flowerView = flowerView;
-        extrinsicState.area = CGRectMake(x, y, size, size);
+//        ExtrinsicFlowerState extrinsicState;
+//        extrinsicState.flowerView = flowerView;
+//        extrinsicState.area = CGRectMake(x, y, size, size);
         
-        [flowerList addObject:[NSValue value:&extrinsicState withObjCType:@encode(ExtrinsicFlowerState)]];
+        DLFlyweightMode *mode = [[DLFlyweightMode alloc] init];
+        mode.flowerView = flowerView;
+        mode.area = CGRectMake(x, y, size, size);
+        
+        
+//        [flowerList addObject:[NSValue value:&extrinsicState withObjCType:@encode(ExtrinsicFlowerState)]];
+        
+        [flowerList addObject:mode];
     
     }
     

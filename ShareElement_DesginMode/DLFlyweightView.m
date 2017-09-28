@@ -7,7 +7,8 @@
 //
 
 #import "DLFlyweightView.h"
-#import "ExtrinsicFlowerState.h"    // 外部的 变量
+//#import "ExtrinsicFlowerState.h"    // 外部的 变量
+#import "DLFlyweightMode.h"
 
 @implementation DLFlyweightView
 
@@ -21,18 +22,26 @@ extern NSString *FlowerObjectKey, *FlowerLocationKey;
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     
-    // Drawing code
-    for (NSValue *stateValue in flowerList_)
+    // Drawing code  本来打算用 struct 来存储这些变量的
+//    for (NSValue *stateValue in flowerList_)
+//    {
+//        ExtrinsicFlowerState state;
+//        [stateValue getValue:&state];
+//
+//        UIView *flowerView = state.flowerView;
+//        CGRect area = state.area;
+//
+//        [flowerView drawRect:area];
+//    }
+    
+    for (DLFlyweightMode *mode in flowerList_)
     {
-        ExtrinsicFlowerState state;
-        [stateValue getValue:&state];
-        
-        UIView *flowerView = state.flowerView;
-        CGRect area = state.area;
+        UIView *flowerView = mode.flowerView;
+        CGRect area = mode.area;
         
         [flowerView drawRect:area];
+
     }
-    
 }
 
 

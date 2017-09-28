@@ -19,6 +19,7 @@
 		BFE942781F7C9CBE00205BA3 /* DLFlowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE942771F7C9CBE00205BA3 /* DLFlowerFactory.m */; };
 		BFE9427B1F7C9CCF00205BA3 /* DLFlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9427A1F7C9CCF00205BA3 /* DLFlowerView.m */; };
 		BFE9427F1F7CA74700205BA3 /* DLFlyweightView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9427E1F7CA74700205BA3 /* DLFlyweightView.m */; };
+		BFE942831F7CDA5500205BA3 /* DLFlyweightMode.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE942821F7CDA5500205BA3 /* DLFlyweightMode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		BFE9427C1F7CA67000205BA3 /* ExtrinsicFlowerState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtrinsicFlowerState.h; sourceTree = "<group>"; };
 		BFE9427D1F7CA74700205BA3 /* DLFlyweightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLFlyweightView.h; sourceTree = "<group>"; };
 		BFE9427E1F7CA74700205BA3 /* DLFlyweightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLFlyweightView.m; sourceTree = "<group>"; };
+		BFE942811F7CDA5500205BA3 /* DLFlyweightMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLFlyweightMode.h; sourceTree = "<group>"; };
+		BFE942821F7CDA5500205BA3 /* DLFlyweightMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLFlyweightMode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				BFE9427A1F7C9CCF00205BA3 /* DLFlowerView.m */,
 				BFE9427D1F7CA74700205BA3 /* DLFlyweightView.h */,
 				BFE9427E1F7CA74700205BA3 /* DLFlyweightView.m */,
+				BFE942811F7CDA5500205BA3 /* DLFlyweightMode.h */,
+				BFE942821F7CDA5500205BA3 /* DLFlyweightMode.m */,
 				BFE9427C1F7CA67000205BA3 /* ExtrinsicFlowerState.h */,
 				BFA5B7131F7BB1FA0014C009 /* PincipleIntroduction */,
 				BFA5B6F91F7B45CE0014C009 /* Main.storyboard */,
@@ -190,6 +195,7 @@
 				BFA5B7121F7B48D30014C009 /* DLConcreteWebSite.m in Sources */,
 				BFE9427B1F7C9CCF00205BA3 /* DLFlowerView.m in Sources */,
 				BFA5B7031F7B45CE0014C009 /* main.m in Sources */,
+				BFE942831F7CDA5500205BA3 /* DLFlyweightMode.m in Sources */,
 				BFE942781F7C9CBE00205BA3 /* DLFlowerFactory.m in Sources */,
 				BFA5B70B1F7B45FE0014C009 /* WebSiteFactory.m in Sources */,
 				BFA5B6F51F7B45CE0014C009 /* AppDelegate.m in Sources */,
